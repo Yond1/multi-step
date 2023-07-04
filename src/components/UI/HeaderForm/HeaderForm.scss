@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  justify-content: start;
+  &-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &-title {
+      font-size: 40px;
+      font-weight: 800;
+      color: var(--Marine-blue);
+    }
+    &-substring {
+      font-size: 20px;
+      color: var(--Cool-gray);
+    }
+  }
+}

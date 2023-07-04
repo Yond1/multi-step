@@ -1,0 +1,13 @@
+.step-card {
+  width: 100%;
+  height: 100%;
+  background: var(--Purplish-blue);
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 20px;
+  padding: 40px;
+
+  gap: 50px;
+}

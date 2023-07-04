@@ -1,0 +1,66 @@
+.addons {
+  &-card {
+    width: 100%;
+    height: 80px;
+
+    border: 2px solid var(--Purplish-blue);
+    border-radius: 10px;
+
+    padding: 15px 20px;
+    padding-left: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      pointer-events: none;
+      h4 {
+        color: var(--Marine-blue);
+      }
+      p {
+        color: var(--Cool-gray);
+      }
+    }
+
+    &-left {
+      display: flex;
+      gap: 20px;
+
+      input {
+        width: 0;
+        opacity: 0;
+      }
+      .checkmark {
+        position: relative;
+
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--Cool-gray);
+        transform: translate(0, 50%);
+        border-radius: 4px;
+        &.checked {
+          background-color: var(--Purplish-blue);
+          background-image: url("../../../assets/images/icon-checkmark.svg");
+          background-position: center;
+          background-size: calc(cover * 0.8);
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    &-right {
+      font-weight: 600;
+      color: var(--Purplish-blue);
+    }
+
+    &.active {
+      background: var(--Alabaster);
+    }
+  }
+}

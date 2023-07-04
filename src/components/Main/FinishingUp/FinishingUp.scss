@@ -1,0 +1,86 @@
+.finishing-up {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+  &-line {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    height: 1px;
+    background: var(--Cool-gray);
+  }
+  &-wrapper {
+    width: 100%;
+    padding: 30px;
+    background: var(--Magnolia);
+
+    border-radius: 20px;
+  }
+
+  &-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      color: var(--Marine-blue);
+
+      &-title {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      &-change {
+        span {
+          cursor: pointer;
+          &:hover {
+            color: var(--Purplish-blue);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &-price {
+      color: var(--Marine-blue);
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+  &-addons {
+    &-list {
+      color: var(--Cool-gray);
+      font-weight: 500;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      &-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &-price {
+          color: var(--Marine-blue);
+        }
+      }
+    }
+  }
+  &-total {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--Cool-gray);
+    font-weight: 500;
+    font-size: 18px;
+    &-price {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--Purplish-blue);
+    }
+  }
+}

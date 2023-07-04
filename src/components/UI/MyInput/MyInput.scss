@@ -1,0 +1,31 @@
+.my-label {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  color: var(--Marine-blue);
+  span {
+    color: red;
+    font-weight: 600;
+  }
+}
+.my-input {
+  padding: 16px 13px;
+
+  border-radius: 8px;
+  border: 3px solid var(--Cool-gray);
+
+  font-size: 20px;
+  font-weight: 600;
+
+  color: var(--Marine-blue);
+
+  outline: none;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+  &:focus {
+    border: 3px solid var(--Marine-blue);
+  }
+}

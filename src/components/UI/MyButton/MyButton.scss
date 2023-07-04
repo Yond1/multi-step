@@ -1,0 +1,27 @@
+.my-button {
+  border: none;
+  min-width: 130px;
+  min-height: 50px;
+
+  border-radius: 10px;
+  background: none;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  &.next {
+    background: var(--Marine-blue);
+    color: white;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &.back {
+    color: var(--Marine-blue);
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
