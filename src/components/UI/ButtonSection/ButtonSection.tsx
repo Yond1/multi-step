@@ -31,8 +31,8 @@ const ButtonSection:FC <ButtonSectionProps> = ({currentPage}) => {
     dispatch(stepFn.decrement())
   }
   const confrim = () => {
+    dispatch(stepFn.increment())
     console.log(clientInfo.data)
-    
   }
 
   useEffect(() => {

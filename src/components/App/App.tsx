@@ -7,6 +7,7 @@ import { useAppSelector } from "../helpers/hooks"
 import SelectPlan from "../Main/SelectPlan/SelectPlan"
 import PickAddons from "../Main/PickAddons/PickAddons"
 import FinishingUp from "../Main/FinishingUp/FinishingUp"
+import ThankYou from "../Main/ThankYou/ThankYou"
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
           {pageNumber === 2 && <SelectPlan/>}
           {pageNumber === 3 && <PickAddons/>}
           {pageNumber === 4 && <FinishingUp/>}
+          {pageNumber === 5 && <ThankYou/>}
         </FormWrapper>
       </Sample>
     </Layout>

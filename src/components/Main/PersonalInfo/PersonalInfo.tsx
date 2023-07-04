@@ -35,18 +35,21 @@ const PersonalInfo = () => {
             <MyInput 
             changed={changed.changedName} 
             value={inputValue.nameValue} 
+            required={true} 
             label='Name' 
             type='text' 
             placeholder='Your Name...'/>
             <MyInput 
             changed={changed.changedEmail} 
             value={inputValue.emailValue} 
+            required={true} 
             label='Email Address' type='email'
             placeholder='Your Email...'/> 
             <MyInput 
             changed={changed.changedPhone} 
             value={inputValue.phoneValue} 
-            required={true} label='Phone Number' 
+            required={true} 
+            label='Phone Number' 
             type='tel' 
             placeholder='e.g. +1 234 567 890'/>
         </form>
